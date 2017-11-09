@@ -26,7 +26,7 @@ The Basic UniWalk is shown in "UniWalk/src/simrank/SingleRandomWalk.java". After
 ### Opt-UniWalk
 The optimized UniWalk is shown in "UniWalk/src/simrank/SingleRandomDev.java". After you have calculate the "real" answer of SimRank, you can run this file to get the Opt-UniWalk results, and the precision compared with the “real” scores.
 
-Note, "SingleRandomWalk_M.java and SingleRandomDev_M.java" are the methods with the M-candidate optimization. When you want to deal with large graphs, you should better use them in case of "Out of Memory" Error. "SingleRandomWalk_R.java and SingleRandomWalk_M_R" are for the optimization 'Path Sharing'.
+Note, "SingleRandomWalk_M.java and SingleRandomDev_M.java" are the methods with the M-candidate optimization. When you want to deal with large graphs, you should better use them in case of "Out of Memory" Error. "SingleRandomWalk_M2.java" is a faster version of the implementation of Opt-UniWalk. "SingleRandomWalk_R.java and SingleRandomWalk_M_R" are for the optimization 'Path Sharing'.
 
 ### Distributed UniWalk on Giraph
 To improve the scalability and lower the query response time for multiple sources, we devise a distributed version of UniWalk via a framework Giraph(1.0.0) with Hadoop(0.20.203). The main source codes are shown in "UniWalk/Giraph/". You can directly export all of this project with "Fat jar" into a file "uniwalk.jar", and then use a commond like 
